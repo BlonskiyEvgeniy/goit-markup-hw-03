@@ -28,6 +28,8 @@ body {
 
 .list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 .link {
   text-decoration: none;
@@ -72,6 +74,10 @@ footer {
   color: var(--accent-color);
 }
 
+.adress-contact {
+    padding: 0;
+}
+
 .adress-link {
   color: var(--primary-wh-color);
 }
@@ -82,13 +88,6 @@ footer {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   margin-right: 93px;
-}
-
-.footer-logo {
-  color: var(--primary-wh-color);
-  font-family: 'Raleway', sans-serif;
-  font-size: 26px;
-  font-weight: 700;
 }
 
 /* Site nav */
@@ -112,6 +111,7 @@ footer {
 
 .section-title {
   color: var(--primary-text-color);
+  margin-top: 0;
 }
 
 .site-nav .nav-link.current {
@@ -143,10 +143,98 @@ footer {
   line-height: 1.71;
 }
 
+/* Решение для бизнесса */
+
+.hero {
+    padding: 200px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f303a;
+}
+
+.hero-title {
+  color: var(--primary-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-wh-color);
+  width: 700px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.button {
+    color: var(--primary-wh-color);
+    background-color: var(--accent-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.85;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 32px;
+    width: 200px;
+    text-align: center;
+  }
+
+/* Особенности */
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.features-title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.features-discription {
+    color: var(--tittle-text-color);
+    font-size: 14px;
+    line-height: 1,71;
+
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+/* Чем мы занимаемся */
+.section-title {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+  
+.section {
+      padding: 94px 0;
+}
+
 .about {
 display: flex;
 justify-content: space-between;
 }
+
+/* Команда */
 
 .team {
     background-color:#F5F4FA;
@@ -171,89 +259,17 @@ justify-content: space-between;
   color: var(--tittle-text-color);
 }
 
-.section-title {
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-}
+/* Footer */
 
-.section {
-    padding: 94px 0;
-}
-
-.hero {
-    padding: 200px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+.footer-logo {
+    color: var(--primary-wh-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+  }
 
 
-/* button */
-.button {
-  color: var(--primary-wh-color);
-  background-color: var(--accent-color);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.85;
-  cursor: pointer;
-  border-radius: 4px;
-  padding: 10px 32px;
-  width: 200px;
-  text-align: center;
-}
-
-/* Hero */
-.hero {
-  background-color: #2f303a;
-}
-
-.hero-title {
-  color: var(--primary-text-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--primary-wh-color);
-  width: 700px;
-}
-
-/* Особенности */
-
-.features {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* /Особенности */
-
-/* Business Solution */
-
-/* Peculiarities (особености) */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.future-title {
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
-/* Портфолио */
+/* ПОРТФОЛИО */
 
 /* Button Portfolio */
 .button-portfolio {
@@ -268,7 +284,7 @@ justify-content: space-between;
   width: 130px;
   border-radius: 6px;
   text-align: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
 }
 
 .button-portfolio:hover,
@@ -289,6 +305,7 @@ justify-content: space-between;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+  
 }
 
 .card-description {
@@ -297,3 +314,16 @@ justify-content: space-between;
   line-height: 1.85;
   color: var(--tittle-text-color);
 }
+
+.card-list {
+    display: flex;
+    /* Make a flex container multiline */
+    flex-wrap: wrap;
+    /* Set gap between rows and columns */
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+   
+
+
