@@ -320,10 +320,24 @@ justify-content: space-between;
     /* Make a flex container multiline */
     flex-wrap: wrap;
     /* Set gap between rows and columns */
-    gap: 10px;
+    gap: 30px;
     padding: 0;
     list-style: none;
+    margin-bottom: 94px;
+
 }
-   
+
+.button-f {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 10px;
+
+  
+}
+
+.navigation {
+    margin-bottom: 94px;
+}
 
 
