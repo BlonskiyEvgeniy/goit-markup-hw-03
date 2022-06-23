@@ -213,34 +213,40 @@ body {
   }
 
 /* Чем мы занимаемся */
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.16;
+  margin-bottom: 50px;
+}
 .section-title-team {
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    padding-top: 94px;
-    margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  padding-top: 94px;
+  margin-bottom: 50px;
 }
   
 .section {
-      margin-bottom: 94px;
+  margin-bottom: 94px;
 }
 
 .about {
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Команда */
 
 .team {
-    background-color:#F5F4FA;
-    margin: 0;
-    padding-bottom: 94px;
+  background-color:#F5F4FA;
+  margin: 0;
+  padding-bottom: 94px;
 }
 
 .list-team {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .list-team > li {
@@ -350,23 +356,23 @@ footer {
 }
 
 .card-list {
-    display: flex;
-    /* Make a flex container multiline */
-    flex-wrap: wrap;
-    /* Set gap between rows and columns */
-    gap: 30px;
-    padding: 0;
-    list-style: none;
-    margin-bottom: 94px;
+  display: flex;
+  /* Make a flex container multiline */
+  flex-wrap: wrap;
+  /* Set gap between rows and columns */
+  gap: 30px;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 94px;
    
 
 }
 
 .button-f {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 10px;
 
   
 }
