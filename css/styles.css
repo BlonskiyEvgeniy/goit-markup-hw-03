@@ -46,6 +46,11 @@ body {
 
 /* Header */
 
+.header {
+  border: 1px solid #ECECEC;
+  margin-bottom: 100px;
+}
+
 .container {
     width: 1200px;
     padding: 0;
@@ -306,11 +311,12 @@ footer {
 :focus {
   color: var(--accent-color);
   }
-  
+
 
 /* ПОРТФОЛИО */
 
 /* Button Portfolio */
+
 .button-portfolio {
   color: var(--primary-text-color);
   background-color: var(--bg-button-portfolio);
@@ -344,15 +350,33 @@ footer {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
-  
+  padding-left: 24px;
 }
+
+.card-list > li {
+  background-color: var(--primary-wh-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;}
+
+.card-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ct-img > img {
+  margin-bottom: 20px;
+}
+
+
 
 .card-description {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.85;
   color: var(--tittle-text-color);
-  border: red;
+  margin-bottom: 20px;
+  padding-left: 24px;
+  
 }
 
 .card-list {
