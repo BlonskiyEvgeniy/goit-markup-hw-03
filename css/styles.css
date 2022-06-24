@@ -35,6 +35,7 @@ body {
   letter-spacing: 0, 03em;
 }
 
+
 .list {
   list-style-type: none;
   padding: 0;
@@ -42,26 +43,28 @@ body {
 }
 .link {
   text-decoration: none;
+  color: var(--primary-text-color);
 }
+
+
 
 /* Header */
 
 .header {
   border: 1px solid #ECECEC;
-  margin-bottom: 100px;
+  
 }
 
 .container {
     width: 1200px;
-    padding: 0;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
 .navigation {
     display: flex;
     align-items: center;
-    margin-top: 24px;
-    margin-bottom: 25px;
+
 }
 
 .contact {
@@ -73,14 +76,23 @@ body {
   color: var(--accent-color);
 }
 
-.adress-contact > li {
+.adress-contact-li {
     margin-bottom: 9px;
-   
+}
+
+.adress-contact-li:last-of-type {
+  margin-bottom: 0px;
 }
 
 .adress-link {
   color: var(--primary-wh-color);
 }
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 /* Логотип */
 .logo {
   color: var(--primary-text-color);
@@ -91,11 +103,13 @@ body {
 }
 
 /* Site nav */
-.nav-link {
+.nav-li {
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1, 14;
   letter-spacing: 0.02em;
+  margin-top: 32px;
+  margin-bottom: 32px;
   margin-right: 50px;
 }
 
@@ -146,12 +160,10 @@ body {
 /* Решение для бизнесса */
 
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 200px 0;
     background-color: #2f303a;
     height: 600px;
+    text-align: center;
 }
 
 .hero-title {
@@ -165,7 +177,8 @@ body {
   color: var(--primary-wh-color);
   width: 700px;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  margin-left: 230px;
 }
 
 .button {
@@ -195,6 +208,12 @@ body {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.fetures-item {
+  width: 270px;
+  padding: 15px 0; 
 }
 
 .features-discription {
@@ -233,7 +252,7 @@ body {
 }
   
 .section {
-  margin-bottom: 94px;
+  padding: 94px 0;
 }
 
 .about {
@@ -241,12 +260,16 @@ body {
   justify-content: space-between;
 }
 
+.s-about {
+  padding-top: 0;
+}
+
 /* Команда */
 
 .team {
   background-color:#F5F4FA;
   margin: 0;
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 
 .list-team {
@@ -280,12 +303,16 @@ body {
   margin-bottom: 30px;
 }
 
+.team-wrapper {
+  padding: 30px 0;
+}
+
 /* Footer */
 
 footer {
   background: #2f303a;
-  height: 252px;
   padding-top: 60px;
+  padding-bottom: 60px;
   }
 
 .footer-logo {
@@ -294,10 +321,8 @@ footer {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
-  display: flex;
+  display: block;
   }
-
-
 
 .contact-footer {
   font-weight: 400;
@@ -305,6 +330,7 @@ footer {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+
   }
   
 .contact-footer:hover,
@@ -326,7 +352,6 @@ footer {
   line-height: 1.62;
   border: none;
   padding: 6px 22px;
-  width: 130px;
   border-radius: 6px;
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
@@ -396,10 +421,5 @@ footer {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  gap: 10px;
-
-  
+  gap: 10px; 
 }
-
-
-

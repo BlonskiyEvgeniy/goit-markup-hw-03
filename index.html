@@ -18,32 +18,36 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-    <div class="container">
-        <nav class="navigation">
-            <a href="./index.html" class="logo link"> <span class="web-blue">Web</span>Studio </a>
-            <ul class="site-nav list">
-              <li><a class="nav-link link current" href="./index.html">Студия</a></li>
-              <li><a class="nav-link link" href="./portfolio.html">Портфолио</a></li>
-              <li><a class="nav-link link" href="">Контакты</a></li>
-            </ul>
-       
+    <header class="header">
+      <div class="container nav-wrapper">
+          <nav class="navigation">
+              <a href="./index.html" class="logo link"> <span class="web-blue">Web</span>Studio </a>
+              <ul class="site-nav list">
+                <li class="nav-li"><a class="nav-link link current" href="./index.html">Студия</a></li>
+                <li class="nav-li"><a class="nav-link link" href="./portfolio.html">Портфолио</a></li>
+                <li class="nav-li"><a class="nav-link link" href="">Контакты</a></li>
+              </ul>
+          </nav>
+
           <ul class="contact list">
-            <li>
+            <li class="nav-li">
               <a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li><a class="contact-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="nav-li"><a class="contact-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
           </ul>
-        </nav>
-    </div>
-    </header>
+      </div>
+      </header>
 
     <main>
       <!-- Решения для бизнесса -->
       <section class="hero section">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="button" type="button">Заказать услугу</button>
+        <div class="container">
+            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+             <button class="button" type="button">Заказать услугу</button>
+        </div>
       </section>
+       
+      
 
       <!-- Особенности -->
       <section class="section">
@@ -51,25 +55,25 @@
             <h2 class="visually-hidden">Особенности</h2>
 
         <ul class="features list">
-          <li>
+          <li class="fetures-item">
             <h3 class="features-title">Внимание к деталям</h3>
             <p class="future-discription">
               Идейные соображения, а также начало повседневной работы по формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="fetures-item">
             <h3 class="features-title">Пунктуальность</h3>
             <p class="features-discription">
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="fetures-item">
             <h3 class="features-title">Планирование</h3>
             <p class="features-discription">
               Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="fetures-item">
             <h3 class="features-title">Современные технологии</h3>
             <p class="features-discription">
               Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -80,7 +84,7 @@
       </section>
 
       <!-- Чем мы занимаемся -->
-      <section class="section">
+      <section class="section s-about">
        <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="about list">
@@ -103,23 +107,31 @@
         <ul class="list list-team">
           <li class="lt-img">
             <img src="./images/img 4.jpg" alt="работник 1" width="270" />
-            <h3 class="team-name">Игорь Демьяненко</h3>
-            <p class="team-position">Product Designer</p>
+            <div class="team-wrapper">
+              <h3 class="team-name">Игорь Демьяненко</h3>
+              <p class="team-position">Product Designer</p>
+            </div>
           </li>
           <li class="lt-img">
             <img src="./images/img 5.jpg" alt="работник 2" width="270" />
-            <h3 class="team-name">Ольга Репина</h3>
-            <p class="team-position">Frontend Developer</p>
+            <div class="team-wrapper">
+              <h3 class="team-name">Ольга Репина</h3>
+              <p class="team-position">Frontend Developer</p>
+            </div>
           </li>
           <li class="lt-img">
             <img src="./images/img 7.jpg" alt="работник 3" width="270" />
-            <h3 class="team-name">Николай Тарасов</h3>
-            <p class="team-position">Marketing</p>
+            <div class="team-wrapper">
+              <h3 class="team-name">Николай Тарасов</h3>
+              <p class="team-position">Marketing</p>
+            </div>
           </li>
           <li class="lt-img">
             <img src="./images/img 8.jpg" alt="работник 4" width="270" />
-            <h3 class="team-name">Михаил Ермаков</h3>
-            <p class="team-position">UI Designer</p>
+            <div class="team-wrapper">
+              <h3 class="team-name">Михаил Ермаков</h3>
+              <p class="team-position">UI Designer</p>
+            </div>
           </li>
         </ul>
         </div>
@@ -134,7 +146,7 @@
           </a>
           <address>
             <ul class="adress-contact list">
-              <li>
+              <li class="adress-contact-li">
                 <a
                   class="adress-link link"
                   href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
@@ -143,10 +155,10 @@
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li>
+              <li class="adress-contact-li">
                 <a class="contact-footer link" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
-              <li><a class="contact-footer link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+              <li class="adress-contact-li"><a class="contact-footer link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
           </address>
       </div>
