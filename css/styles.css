@@ -18,32 +18,56 @@ body {
   --bg-button-portfolio: #f5f4fa;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-address {
-  font-style: normal;
-}
-
-section {
-  padding: 94px 0;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
   font-size: 14px;
   letter-spacing: 0.03em;
+}
+
+html {
+	box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+/* Класс для обнуления базовых свойств у списков (ul) */
+.list {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+/* Класс для обнуления базовых свойств у ссылок */
+.link {
+	text-decoration: none;
+	color: inherit;
+}
+/* Свойства для корректного отображения картинок */
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+/* Свойства для обнуления курсива у address */
+address {
+	font-style: normal;
+}
+
+.section {
+  padding: 94px 0;
 }
 
 .list {
@@ -54,6 +78,13 @@ body {
 .link {
   text-decoration: none;
   color: var(--primary-text-color);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.16;
+  margin-bottom: 50px;
 }
 
 /* Header */
@@ -94,7 +125,7 @@ body {
   color: var(--primary-wh-color);
 }
 
-.nav-wrapper {
+.header .container {
   display: flex;
   align-items: center;
 }
@@ -109,13 +140,16 @@ body {
 }
 
 /* Site nav */
-.nav-li {
+.nav-link {
+  padding: 32px 0;
+  display: block;
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  margin-top: 32px;
-  margin-bottom: 32px;
+}
+
+.nav-li:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -139,13 +173,15 @@ body {
 }
 
 .contact-link {
+  display: block;
+  padding: 32px 0;
   color: var(--tittle-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-style: normal;
-  margin-right: 50px;
+
 }
 
 .contact-link:hover,
@@ -168,7 +204,6 @@ body {
 .hero {
   padding: 200px 0;
   background-color: #2f303a;
-  height: 600px;
   text-align: center;
 }
 
@@ -197,9 +232,9 @@ body {
   cursor: pointer;
   border-radius: 4px;
   padding: 10px 32px;
-  width: 200px;
   text-align: center;
   border: none;
+  letter-spacing: 0.06em;
 }
 
 /* Особенности */
@@ -207,7 +242,7 @@ body {
 .features {
   display: flex;
   justify-content: space-between;
-  margin-top: 0;
+
 }
 
 .features-title {
@@ -244,31 +279,26 @@ body {
 }
 
 /* Чем мы занимаемся */
-.section-title {
-  text-align: center;
-  font-size: 36px;
-  line-height: 1.16;
-  margin-bottom: 50px;
-}
+
 .section-title-team {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-
   margin-bottom: 50px;
 }
-/*   
-.section {
-  padding: 94px 0;
-} */
 
+/* about */
 .about {
-  display: flex;
-  justify-content: space-between;
+  padding-top: 0;
 }
 
-.s-about {
-  padding-top: 0;
+.about-list {
+  display: flex;
+  align-items: center;
+}
+
+.about-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Команда */
@@ -352,15 +382,15 @@ footer {
   line-height: 1.62;
   border: none;
   padding: 6px 22px;
-  border-radius: 6px;
+  border-radius: 4px;
   text-align: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button-portfolio:hover,
 .button-portfolio:focus {
   background-color: var(--accent-color);
   color: var(--primary-wh-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button-portfolio.active {
@@ -375,23 +405,25 @@ footer {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
-  padding-left: 24px;
+  margin-bottom: 4px;
+}
+
+.card-thumb {
+  padding: 20px 24px;
 }
 
 .card-list > li {
   background-color: var(--primary-wh-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  border: 1px solid #EEEEEE;
+  flex-basis: calc((100% - 90px)/3);
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .card-list {
   display: flex;
   justify-content: space-between;
-}
 
-.ct-img > img {
-  margin-bottom: 20px;
 }
 
 .card-description {
@@ -399,8 +431,7 @@ footer {
   font-size: 16px;
   line-height: 1.85;
   color: var(--tittle-text-color);
-  margin-bottom: 20px;
-  padding-left: 24px;
+
 }
 
 .card-list {
@@ -408,10 +439,9 @@ footer {
   /* Make a flex container multiline */
   flex-wrap: wrap;
   /* Set gap between rows and columns */
-  gap: 30px;
-  padding: 0;
-  list-style: none;
-  margin-bottom: 94px;
+  margin-right: -30px;
+  margin-bottom: -30px;
+
 }
 
 .button-f {
